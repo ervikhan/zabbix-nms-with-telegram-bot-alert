@@ -148,6 +148,7 @@ https://www.zabbix.com/download?zabbix=5.0&os_distribution=ubuntu&os_versi
         systemctl enable zabbix-agent
         ``` 
 - Add host to zabbix nms frontend
+
     - Login zabbix
     - Configuration > host
     - Click Create Host (top right corner)
@@ -157,8 +158,6 @@ https://www.zabbix.com/download?zabbix=5.0&os_distribution=ubuntu&os_versi
 
 - Find user `@BotFather` or visit link https://t.me/BotFather
 - Follow the instruction
-    
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5843bea4-b1ec-4314-8060-972979966a13/Untitled.png)
 - After the bot has been successfully created, take our Telegram user/group ID which will receive messages from Zabbix
     - If you're using personal user for alert, find `@myidbot` or visit https://t.me/myidbot
         
@@ -179,9 +178,11 @@ https://www.zabbix.com/download?zabbix=5.0&os_distribution=ubuntu&os_versi
     - Click add
 
 - Make Trigger
+
     - For showing bot messages to our telegram
     - Open **Configuration>Action>TriggerAction**
     - Adjust according to what was previously set
         
 - Test
+
     - Shutdown the machine monitored by Zabbix or turn off the Zabbix agent to test the bot. If successful, there will be a notification like this, then the Zabbix telegram webhook was successful.

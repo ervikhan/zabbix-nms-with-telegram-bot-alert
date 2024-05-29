@@ -162,59 +162,26 @@ https://www.zabbix.com/download?zabbix=5.0&os_distribution=ubuntu&os_versi
 - After the bot has been successfully created, take our Telegram user/group ID which will receive messages from Zabbix
     - If you're using personal user for alert, find `@myidbot` or visit https://t.me/myidbot
         
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9ac78c12-86a8-4e4b-9f32-011efd148b32/Untitled.png)
-        
-    - if you're using group for alert, open your telegram web and invite @ZabbixAlertBotAdmin_Bot that was created earlier, go to the group then look in the address bar, that's the group ID
-        
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/471bc2e1-268d-4f70-82c2-39acf4f496c2/Untitled.png)
-        
-        Or you can add bot `@myidbot` to group and send the message with format `/getgroupid@myidbot`
-        
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9ff6d21b-091d-4efc-a64a-913f4e50bb7d/Untitled.png)
+    - if you're using group for alert, open your telegram web and invite @ZabbixAlertBotAdmin_Bot that was created earlier, go to the group then look in the address bar, that's the group ID. Or you can add bot `@myidbot` to group and send the message with format `/getgroupid@myidbot`
 
 - Testing Send Bot Messages to Our Telegram
-    - Login Zabbix, then **Administration > Media Types**, then go to **Telegram**
-        
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/55ce6606-2315-4897-bb05-e23cd0189f77/Untitled.png)
-        
-    - Customized like that
-        
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/94578970-3355-43cf-ae5f-227d34a17ba0/Untitled.png)
-        
+
+    - Login Zabbix, then **Administration > Media Types**, then go to **Telegram**        
+    - Customized according to what was set earlier
     - Apart from that, set it as default, then click add
     - Do testing to check whether the bot message was successfully entered or not, if successful then you can continue to the next step, if not then check again, there must be something wrong
         
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cdc4ff41-b64d-4ff8-869a-8ea125b36cb5/Untitled.png)
-        
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b1a9ff73-6679-498c-b797-bab5214d696f/Untitled.png)
-        
 - Setting User Zabbix Admin
+
     - To send a message to the Zabbix admin and then forward it to the bot that we created earlier to display it to us
-    - Go to **Administration>Users**, there is the username **Admin** click then adjust as shown in the picture
-        
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/858501d5-66fa-496c-a813-11f43c78019f/Untitled.png)
-        
-    - Then in the media section, click add then adjust it as shown in the picture
-        
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6c3c2436-ce41-488a-a142-167a21b3cdd4/Untitled.png)
-        
+    - Go to **Administration>Users**, there is the username **Admin** click then adjust
+    - Then in the media section, click add then adjust it (Fill "Send to" with Your Telegram user ID or Group ID)
     - Click add
 
 - Make Trigger
     - For showing bot messages to our telegram
     - Open **Configuration>Action>TriggerAction**
-        
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b7f74d30-ffbc-486f-b75e-ab3efa94395e/Untitled.png)
-        
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2501c6b5-1426-4243-b43a-f65079cbedb8/Untitled.png)
-        
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ac0737b6-b404-469b-82d4-fda4cc94a60c/Untitled.png)
-        
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/192d60b8-8d80-4677-9180-8c32b807df5c/Untitled.png)
-        
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7bc19f83-6319-46ee-ad2b-7e9aac073524/Untitled.png)
+    - Adjust according to what was previously set
         
 - Test
     - Shutdown the machine monitored by Zabbix or turn off the Zabbix agent to test the bot. If successful, there will be a notification like this, then the Zabbix telegram webhook was successful.
-        
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e8dea94d-78e9-487d-953e-ed2c8fa53282/Untitled.png)

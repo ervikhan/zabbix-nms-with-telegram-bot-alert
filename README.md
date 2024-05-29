@@ -1,4 +1,4 @@
-***Install Zabbix NMS with Telegram bot Alert***
+<h2> Install Zabbix NMS with Telegram bot Alert </h2>
 
 **BASE OS Ubuntu 20.04**
 - Zabbix Version : 6.0 LTS
